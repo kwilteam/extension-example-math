@@ -1,7 +1,7 @@
 # Extension Deployment Template
 
 This repo contains an example usage of the [template for running Kwil extensions using Docker Compose](<https://github.com/kwilteam/extension-deployment-template>).
-It uses a sample [math extension](<https://https://github.com/kwilteam/kwil-extensions/tree/main/examples/math>).
+It uses a sample [math extension](<https://github.com/kwilteam/kwil-extensions/tree/main/examples/math>).
 
 ## Quickstart
 
