@@ -43,12 +43,6 @@ To run a script, simply run:
 ./script.sh deploy
 ```
 
-**NOTE:** depending on your local machine settings, you may get a permissions error when using the scripts.  To fix this on Unix systems, simply run:
-
-```bash
-chmod +X ./script.sh
-```
-
 ## Math Extension
 
 The math extension is an extension that can perform the basic math operations of addition, subtraction, multiplication, and division.  It likely has no real applicable use case, other than to show how to build and use extensions.
