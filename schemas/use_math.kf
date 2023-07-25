@@ -1,0 +1,39 @@
+database math_db;
+
+// this schema is meant to be an example of how to use extensions, and likely has no real use case
+
+use math {
+    round: "up"
+} as math_up;
+
+table users {
+    id int primary,
+    wallet text notnull,
+    balance text
+}
+
+// "add" is a reserved key word
+action add_vals($val1, $val2) public {
+    $sum = math_up.add($val1, $val2);
+
+    SELECT $sum;
+}
+
+
+action subtract($val1, $val2) public {
+    $diff = math_up.sub($val1, $val2);
+
+    SELECT $diff;
+}
+
+action multiply($val1, $val2) public {
+    $prod = math_up.mul($val1, $val2);
+
+    SELECT $prod;
+}
+
+action divide($val1, $val2) public {
+    $quot = math_up.div($val1, $val2);
+
+    SELECT $quot;
+}
