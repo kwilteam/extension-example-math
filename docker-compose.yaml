@@ -1,6 +1,6 @@
 version: '3'
 services:
-  extension-1:
+  math-extension:
     image: kwildb/extension-math:multi-arch
     ports:
       - 50055:50051
@@ -14,7 +14,7 @@ services:
     env_file:
       - ./config/kwil.env
     environment:
-      - KWILD_EXTENSION_ENDPOINTS=extension-1:50051
+      - KWILD_EXTENSION_ENDPOINTS=math-extension:50051
     depends_on:
-      - extension-1
+      - math-extension
     restart: on-failure

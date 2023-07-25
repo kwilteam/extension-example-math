@@ -26,6 +26,11 @@ getVals() {
     fi
 }
 
+deploy() {
+    check_cli_installed
+    kwil-cli database deploy --path ./schemas/use_math.kf
+}
+
 add() {
     check_cli_installed
     getVals
